@@ -383,19 +383,19 @@ describe("TrainComponent", () => {
     });
 
 
-    it("number field should show required error when no value passed", () => {
+    it("number field should show required error when no value passed while searching", () => {
       const c = component.searchByNumberForm.controls["number"];
       expect(c.valid).toBeFalsy();
       c.setValue("");
       expect(c.hasError("required")).toBeTruthy();
     });
-    it("name field should show required error when no value passed", () => {
+    it("name field should show required error when no value passed while searching", () => {
       const c = component.searchByNameForm.controls["name"];
       expect(c.valid).toBeFalsy();
       c.setValue("");
       expect(c.hasError("required")).toBeTruthy();
     });
-    it("seats field should show required error when no value passed", () => {
+    it("seats field should show required error when no value passed while searching", () => {
       const c = component.searchBySeatsAvalForm.controls["seats"];
       expect(c.valid).toBeFalsy();
       c.setValue("");
